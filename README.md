@@ -1,5 +1,5 @@
 # Myntra Consumer Intelligence — Funnel & Sentiment Analysis | End-to-End Behavioral Analysis
-**PostgreSQL · Python · Power BI · NLP Sentiment Analysis**
+**PostgreSQL · Python · NLP Sentiment Analysis**
 
 ---
 
@@ -31,7 +31,7 @@ A business can appear healthy on topline metrics while hiding structural problem
 
 ## 📌 Project Overview
 
-This project delivers an end-to-end consumer behavior analysis for Myntra, India's leading fashion ecommerce platform, using PostgreSQL, Python, and Power BI.
+This project delivers an end-to-end consumer behavior analysis for Myntra, India's leading fashion ecommerce platform, using PostgreSQL and Python.
 
 The business question: *"How can Myntra leverage consumer shopping data to identify conversion bottlenecks, improve engagement, and optimize product and marketing strategy?"*
 
@@ -175,7 +175,7 @@ Conversion rates across signup cohorts consistently hit **82–100%** — custom
 
 - **NULL Duration preserved, not imputed** — 877 NULLs in Duration. Validation confirmed 100% belong to Drop-off rows — system does not record duration when a user exits. Imputing would have invented data that never existed.
 
-- **Physical cleaned tables over views** — Views re-execute on every access. Physical _cleaned tables provide a stable, auditable base for both Python and Power BI connections.
+- **Physical cleaned tables over views** — Views re-execute on every access. Physical _cleaned tables provide a stable, auditable base for both Python connections.
 
 - **SignupDate added to customers** — Enables cohort analysis not possible in most similar projects. Confirms that conversion quality is strong and the problem is behavioral, not demographic.
 
@@ -207,8 +207,8 @@ SQL files: [00_create_tables.sql](sql/00_create_tables.sql) · [01_validation.sq
 
 - **PostgreSQL** — Schema design, data validation, cleaning, and advanced business analysis
 - **Python** — NLP sentiment pipeline (VADER + hybrid scoring + keyword theme extraction + GenAI recommendations)
-- **Power BI** — Interactive 7-page dashboard with DAX measures and composite product scoring
 - **PyTest** — Unit and integration testing for NLP pipeline
+- **GitHub Actions** — CI/CD pipeline for automated testing on every push
 
 ---
 
@@ -230,4 +230,4 @@ SQL files: [00_create_tables.sql](sql/00_create_tables.sql) · [01_validation.sq
 
 ---
 
-*Analysis Period: 2023–2024 | Data Source: Myntra (partial real + simulated) | Tools: PostgreSQL · Python · Power BI*
+*Analysis Period: 2023–2024 | Data Source: Myntra (partial real + simulated) | Tools: PostgreSQL · Python*
