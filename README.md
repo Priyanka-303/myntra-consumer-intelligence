@@ -222,12 +222,6 @@ SQL files: [00_create_tables.sql](sql/00_create_tables.sql) · [01_validation.sq
 
 ---
 
-## 📬 Contact
 
-**Priyanka Mohapatra** | Data Analyst
 
-**LinkedIn:** [Profile](#) | **GitHub:** [Priyanka-303](https://github.com/Priyanka-303)
-
----
-
-*Analysis Period: 2023–2024 | Data Source: Myntra (partial real + simulated) | Tools: PostgreSQL · Python · Power BI*
+*Analysis Period: 2023–2024 | Data Source: Myntra (partial real + simulated) | Tools: PostgreSQL · Python *
