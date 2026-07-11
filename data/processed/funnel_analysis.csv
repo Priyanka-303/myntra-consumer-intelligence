@@ -1,0 +1,5 @@
+stage,total_visits,unique_customers,drop_offs,drop_off_rate_pct
+Homepage,961,424,189,19.67
+ProductPage,995,426,207,20.80
+Checkout,949,434,465,49.00
+Purchase,1015,425,0,0.00

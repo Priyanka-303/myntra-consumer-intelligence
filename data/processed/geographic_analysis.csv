@@ -1,0 +1,14 @@
+state,region,total_visits,total_purchases,unique_customers,purchase_rate_pct
+Gujarat,West,578,185,73,32.01
+Tamil Nadu,South,485,173,61,35.67
+Uttar Pradesh,North,450,136,62,30.22
+Maharashtra,West,416,143,51,34.38
+Madhya Pradesh,East,407,129,57,31.70
+Odisha,East,292,95,34,32.53
+Bihar,North,224,60,27,26.79
+Karnataka,South,213,69,27,32.39
+Kerala,South,194,67,24,34.54
+Delhi,North,193,60,24,31.09
+West Bengal,East,169,67,22,39.64
+Telangana,South,157,52,22,33.12
+Rajasthan,North,142,47,16,33.10

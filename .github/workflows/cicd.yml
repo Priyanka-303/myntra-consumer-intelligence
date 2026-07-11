@@ -1,0 +1,43 @@
+# .github/workflows/cicd.yml
+# CI/CD Pipeline — runs automatically on every push to main branch
+# Spins up a virtual machine, installs packages, runs all unit tests
+# Ensures sentiment logic works flawlessly before any code reaches production
+
+name: Myntra NLP Pipeline — CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1 — checkout the repo code onto the virtual machine
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2 — set up Python environment
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      # Step 3 — install all required packages
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install vaderSentiment pandas pytest
+
+      # Step 4 — run all unit tests via pytest
+      - name: Run unit tests
+        run: |
+          pytest tests/ -v
+
+      # Step 5 — confirm all tests passed
+      - name: Tests passed
+        run: echo "All sentiment unit tests passed — pipeline is production ready"

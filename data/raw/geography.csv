@@ -1,0 +1,21 @@
+GeographyID,City,State,Region
+1,Mumbai,Maharashtra,West
+2,Delhi,Delhi,North
+3,Bengaluru,Karnataka,South
+4,Hyderabad,Telangana,South
+5,Chennai,Tamil Nadu,South
+6,Kolkata,West Bengal,East
+7,Pune,Maharashtra,West
+8,Ahmedabad,Gujarat,West
+9,Jaipur,Rajasthan,North
+10,Lucknow,Uttar Pradesh,North
+11,Surat,Gujarat,West
+12,Kanpur,Uttar Pradesh,North
+13,Nagpur,Maharashtra,West
+14,Indore,Madhya Pradesh,East
+15,Bhopal,Madhya Pradesh,East
+16,Patna,Bihar,North
+17,Vadodara,Gujarat,West
+18,Coimbatore,Tamil Nadu,South
+19,Kochi,Kerala,South
+20,Bhubaneswar,Odisha,East
