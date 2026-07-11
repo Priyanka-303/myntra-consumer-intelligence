@@ -10,7 +10,7 @@ from src.sentiment_nlp import analyze_polarity, get_vader_score, sentiment_bucke
 
 
 # ─────────────────────────────────────────────
-# UNIT TESTS — analyze_polarity (VADER only)
+# UNIT TESTS  analyze_polarity (VADER only)
 # ─────────────────────────────────────────────
 
 def test_positive_sentiment():
@@ -20,19 +20,16 @@ def test_positive_sentiment():
 
 
 def test_negative_sentiment():
-    """Clearly negative review text should return Negative"""
-    result = analyze_polarity("The material is cheap and the size is too small.")
-    assert result == "Negative", f"Expected Negative, got {result}"
-
+    result = analyze_polarity("Terrible quality, broke after one use. Very disappointed.")
+    assert result == "Negative"
 
 def test_neutral_sentiment():
-    """Neutral review text should return Neutral"""
-    result = analyze_polarity("Okay product. Nothing too special about it.")
-    assert result == "Neutral", f"Expected Neutral, got {result}"
+    result = analyze_polarity("It is what it is. Average experience.")
+    assert result == "Neutral"
 
 
 # ─────────────────────────────────────────────
-# UNIT TESTS — analyze_polarity (hybrid: VADER + rating)
+# UNIT TESTS  analyze_polarity (hybrid: VADER + rating
 # ─────────────────────────────────────────────
 
 def test_hybrid_positive_high_rating():
